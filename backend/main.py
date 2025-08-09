@@ -31,7 +31,7 @@ async def chat(message: Message):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful AI assistant named Jarvis."},
+                {"role": "system", "content": "You are a helpful AI assistant named Orion."},
                 {"role": "user", "content": message.text}
             ]
         )
